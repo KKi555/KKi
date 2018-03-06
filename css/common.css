@@ -1,0 +1,452 @@
+@charset "UTF-8";
+
+
+/**************************** PART01 常规 *********************************/
+body {
+    font-size: 15px;
+    font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+    color:#333;
+    margin:0;
+    padding:0;
+    background-color: #ffffff;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd {
+    margin:0;
+    padding:0;
+    border:none;
+    list-style:none;
+}
+h1{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+}/********适用场景：文章列表和文章详情的一级标题*********/
+h2{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+h3{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}/********适用场景：文章详情的一级标题下的二级分类*********/
+
+h4{
+    font-size: 15px;
+    color: #333;
+    font-weight: 400;
+}/********适用场景：文章列表中的概要，文章详情中一级标题的引言（提示语）*********/
+
+h5{
+    font-size: 12px;
+    color: #333;
+    font-weight: 600;
+}/********适用场景：文章列表和图片列表中的关键词提要、文章详情中插入图片描述*********/
+
+h6{
+    font-size: 12px;
+    color: #999999;
+    font-weight: 400;
+}/********适用场景：文章列表中的时间展示*********/
+
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color:#666666;
+}
+p{
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+input {border:none;}
+.f_l   {float:left;}
+.f_r  {float:right;}
+.clear  {clear:both;}
+.inline-block{display: inline-block}
+.link{color: cornflowerblue}
+/**************************** PART02 通用 *********************************/
+#nav_box,#article_box,#news_box{
+    width:1200px;
+    min-height: 600px;
+    margin:0 auto;
+}
+.m_t{
+    margin-top: 10px;
+}
+.m_t2{
+    margin-top: 20px;
+}
+.m_t3{
+    margin-top: 30px;
+}
+.m_t4{
+    margin-top: 40px;
+}
+.m_t5{
+    margin-top: 50px;
+}
+.m_b{
+    margin-bottom: 10px;
+}
+.m_b2{
+    margin-bottom: 20px;
+}
+.m_b3{
+    margin-bottom: 30px;
+}
+.m_b4{
+    margin-bottom: 40px;
+}
+.m_b5{
+    margin-bottom: 50px;
+}
+.space{
+    height: 60px;
+}
+
+/*返回顶部按钮*/
+.goToUp{
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    background: #ffffff url(../images/slice/goToUp.png) center no-repeat ;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px #f5f5f5,-2px -2px 2px #f5f5f5,-2px 2px 2px #f5f5f5,2px -2px 2px #f5f5f5;
+    cursor: pointer;
+    display: none;
+}
+.fixed{
+    position: fixed;
+    top: 20px;
+}
+.navFixed{
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+}
+/**************************** PART03 首页-导航 *********************************/
+#navbar_box{
+    height: 80px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 2px 10px #ECEAEA;
+}
+#navbar_box a:hover{
+    color: #999999;
+}
+#logo{
+    height:50px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 60px;
+}
+#logo img{
+    height: 50px;
+}
+#navbar_box ul{
+    float: left;
+    margin-top: 32px;
+    margin-bottom: 14px;
+    margin-left: 20px;
+    font-size: 12px;
+}
+#navbar_box ul li{
+    float: left;
+    width:50px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    color: #999999;
+}
+
+/**************************** PART04 首页-大图 *********************************/
+#topicImg_box{
+    width: 800px;
+    height: 480px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow:3px 3px 3px #f5f5f5,-3px -3px 3px #f5f5f5;
+    background:url(../images/snowtree.jpg); background-size:cover
+}
+#sloganImg_box{
+    width: 400px;
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#sloganImg_box img{
+    width: 100%;
+    height: auto;
+}
+
+/**************************** PART6 文章页 *********************************/
+#article_box ul{
+    width: 656px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/********  封面 ******/
+.cover{
+    width: 656px;
+    height: 260px;
+    background-position: 10% 15%;
+}
+.cover:hover{
+    opacity: 0.6;
+}
+.cover01{
+    background: url("../images/article/cover01.jpeg");background-size:cover;background-position: 10% 12%;
+}
+.cover02{
+    background: url("../images/article/cover02.jpeg");background-size:cover;
+}
+.cover03{
+    background: url("../images/article/cover03.jpeg");background-size:cover;
+}
+.cover04{
+    background: url("../images/article/cover04.jpeg");background-size:cover;
+}
+.cover05{
+    background: url("../images/article/cover05.jpeg");background-size:cover;
+}
+.cover06{
+    background: url("../images/article/cover06.jpeg");background-size:cover;
+}
+.cover07{
+    background: url("../images/cover07.jpeg");background-size:cover;
+}
+.cover08{
+    background: url("../images/cover08.jpeg");background-size:cover;
+}
+.cover09{
+    background: url("../images/cover09.jpeg");background-size:cover;
+}
+.cover10{
+    background: url("../images/cover10.jpeg");background-size:cover;
+}
+.cover11{
+    background: url("../images/cover11.jpeg");background-size:cover;
+}
+.cover12{
+    background: url("../images/cover12.jpeg");background-size:cover;
+}
+.cover13{
+    background: url("../images/cover13.jpeg");background-size:cover;
+}
+.cover14{
+    background: url("../images/cover14.jpeg");background-size:cover;
+}
+.cover15{
+    background: url("../images/cover15.jpeg");background-size:cover;
+}
+.cover16{
+    background: url("../images/cover16.jpeg");background-size:cover;
+}
+.cover17{
+    background: url("../images/cover17.jpeg");background-size:cover;
+}
+.cover18{
+    background: url("../images/cover18.jpeg");background-size:cover;
+}
+.article_li h1{
+    margin-top: 15px;
+}
+.article_li h1:hover{
+    color: #666666;
+}
+.article_li h5{
+    float: left;
+    margin-top: 10px;
+}
+.article_li h6{
+    float: right;
+    margin-top: 10px;
+}
+/**************************** PART07 图片 *********************************/
+#picture_box ul{
+    width: 848px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pic_li a:hover{
+    opacity: 0.6;
+}
+.pic img{
+    width: 100%;
+}
+.pic_li h5{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+/********* PART 图片故事 **********/
+#picstory_box {
+    background-color: #000000;
+    min-height: 700px;
+}
+#picstory_content{
+    width: 848px;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    vertical-align: middle;
+}
+#picstory_content img{
+    width: 100%;
+    margin: auto;
+    vertical-align: middle;
+}
+#picstory_content .picDescription{
+    position: absolute;
+    bottom: 0;
+    width: 848px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 10px;
+}
+#picstory_content h2{
+    color: #eaeaea;
+}
+#picstory_content p{
+    color: #eaeaea;
+}
+#picstory_content .dateOfPic{
+    color: #eaeaea;
+    font-size: 14px;
+}
+#picstory_content p{
+    line-height: 18px;
+}
+
+/**************************** PART08 碎片 *********************************/
+#chip_box{
+    width: 848px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#chip_box h1{
+    float: left;
+    line-height: 30px;
+}
+#chip_box h5{
+    float: left;
+    margin-left: 6px;
+    line-height: 40px;
+}
+#chip_box .chipPic{
+    float: right;
+    width: 750px;
+}
+.chipPic img{
+    width: 100%;
+}
+/**************************** PART09 文章详情 *********************************/
+#articleContent_box{
+    width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-bottom: 60px;
+}
+#articleContent_box .date{
+    line-height: 20px;
+    margin: 10px 0;
+}
+.code{
+    position: fixed;
+    top: 140px;
+    right: 140px;
+    width: 180px;
+}
+#articleContent_box img{
+    width: 100%;
+}
+.bold{
+    font-weight: 600;
+}
+#articleContent_box section{
+    margin: 60px 20px;
+}
+#articleContent_box p{
+    margin: 30px 0;
+}
+#articleContent_box .title{
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+#articleContent_box .divider{
+    height: 1px;
+    background-color: #eaeaea;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+#articleContent_box section h1{
+    margin-top: 90px;
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+#articleContent_box h3{
+    font-weight: 600;
+}
+#articleContent_box h4{
+    margin-bottom: -80px;
+}
+#articleContent_box h5{
+    margin-top: -20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.quote{
+    background-color: #f5f5f5;
+    font-size: 16px;
+    color: #000000;
+    padding: 20px 30px;
+    margin: 30px 0px;
+    line-height: 28px;
+}
+#articleContent_box .mainBody{
+    background-color: yellow;
+    text-align: center;
+    margin: 0px auto 80px auto;
+    width: 60px;
+}
+#articleContent_box li{
+    padding-left: 20px;
+    margin: 10px 0px;
+}
+#articleContent_box ul{
+    margin: 50px 0px;
+}
+#articleContent_box .insertPic{
+    margin-top: 50px;
+}
+#articleContent_box .insertPicSmaller{
+    margin-top: 50px;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#articleContent_box .yellowBck{
+    background-color: yellow;
+    display:inline-block;
+    padding: 2px 10px;
+}
+/**************************** PART05-footer *********************************/
+#footer{
+    background-color: #f7f7f7;
+    height:80px;
+    padding:20px 50px;
+}
+#footer p{
+    margin-top: 15px;
+    font-size: 12px;
+    color: #333333;
+}
