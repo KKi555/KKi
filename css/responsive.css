@@ -61,7 +61,7 @@
     }
     #index_content .subnav{
         border-left: solid 2px #000000;
-        padding-left: 16px;
+        padding-left: 12px;
         margin-bottom: 30px;
         line-height: 12px;
         float: left;
@@ -236,7 +236,7 @@
     }
     #index_content .subnav{
         border-left: solid 2px #000000;
-        padding-left: 16px;
+        padding-left: 12px;
         margin-bottom: 20px;
         line-height: 12px;
         float: left;
@@ -283,7 +283,7 @@
     }
     #index_chip .chipPic{
         float: right;
-        width: 70%;
+        width: 80%;
     }
     .chipPic img{
         width: 100%;
@@ -328,6 +328,18 @@
     }
     #articleContent_box section h1 {
         font-size: 20px;
+    }
+    .quote {
+        background-color: #f5f5f5;
+        font-size: 16px;
+        color: #000000;
+        padding: 10px 12px;
+        margin: 30px 0px;
+        line-height: 28px;
+    }
+    #articleContent_box .title {
+        margin-top: 30px;
+        margin-bottom: 0px;
     }
     /*********************碎片页***********************/
     #chip_box{
