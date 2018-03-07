@@ -45,6 +45,7 @@
     }
     #sloganImg_box{
         width: 40%;
+        margin-bottom: 0;
     }
     #sloganImg_box img{
         width: 100%;
@@ -119,7 +120,77 @@
     .work img{
         width: 100%;
     }
+    /*********************文章页***********************/
+    #article_box{
+        width: 100%;
+    }
+    #article_box ul{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .cover{
+        width: 100%;
+        height: 200px;
+        background-position: 10% 15%;
+    }
+    #article_box h4{
+        display: none;
+    }
+    /*********************文章详情页***********************/
+    #articleContent_box{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding-bottom: 60px;
+    }
+    .code{
+        display: none;
+    }
+    #articleContent_box section{
+        margin: 40px 10px;
+    }
+    /*********************碎片页***********************/
+    #chip_box{
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #chip_box h1{
+        float: left;
+        line-height: 30px;
+    }
+    #chip_box h5{
+        float: left;
+        margin-left: 2px;
+        line-height: 40px;
+    }
+    #chip_box .chipPic{
+        float: right;
+        width: 85%;
+    }
+
+    /*********************图片页***********************/
+    #picture_box ul{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*********************关于我***********************/
+    #aboutme_box{
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        padding: 30px 0;
+    }
+    .code02{
+        width: 300px;
+        margin-top: 5px;
+    }
 }
+
+
 /*****************************************手机端*********************************************/
 @media screen and (max-width: 767px) {
     /*********************全局**************************/
@@ -255,6 +326,9 @@
     #articleContent_box section{
         margin: 40px 10px;
     }
+    #articleContent_box section h1 {
+        font-size: 20px;
+    }
     /*********************碎片页***********************/
     #chip_box{
         width: 92%;
@@ -272,7 +346,7 @@
     }
     #chip_box .chipPic{
         float: right;
-        width: 75%;
+        width: 80%;
     }
 
     /*********************图片页***********************/
