@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+
+
+
+/*****************************************超大桌面*********************************************/
+@media screen and (min-width: 1200px) {
+    /*首页内容索引*/
+    #index_content{
+        display: none;
+    }
+}
+/*****************************************桌面*********************************************/
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+    /*首页内容索引*/
+    #index_content{
+        display: none;
+    }
+}
+/*****************************************平板*********************************************/
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    /*********************首页大图***********************/
+    #index_img {
+        width: 100%;
+    }
+    #topicImg_box{
+        width: 90%;
+        height: 400px;
+        /*height: 50%;*/
+    }
+    #sloganImg_box{
+        width: 40%;
+    }
+    #sloganImg_box img{
+        width: 100%;
+    }
+    #logo{
+        margin-left: 60px;
+    }
+    /*********************首页内容索引***********************/
+    #index_content{
+        display: block;
+        background-color: #f7f7f7;
+        padding: 30px 10%;
+    }
+    #index_content h2{
+        border-left: solid 2px #000000;
+        padding-left: 16px;
+        margin-bottom: 30px;
+        line-height: 12px;
+        float: left;
+    }
+    #index_content .seeAll{
+        float: right;
+        margin-bottom: 20px;
+        line-height: 12px;
+        font-size: 12px;
+    }
+    #index_content li{
+        margin-bottom: 20px;
+    }
+    /********  文章列表 ******/
+    #index_article{
+        margin-bottom: 50px;
+    }
+    .cover{
+        width: 100%;
+        height: 200px;
+        background-position: 10% 15%;
+    }
+    .cover:hover{
+        opacity: 0.6;
+    }
+    .list_article_content{
+        background-color: #ffffff;
+        padding: 10px 20px;
+    }
+    .cover01{
+        background: url("../images/article/cover01.jpeg");background-size:cover;background-position: 10% 22%;
+    }
+    /********  碎片列表 ******/
+
+    #index_chip h1{
+        float: left;
+        line-height: 30px;
+    }
+    #index_chip h5{
+        float: left;
+        margin-left: 6px;
+        line-height: 40px;
+        margin-left: 3px;
+    }
+    #index_chip .chipPic{
+        float: right;
+        width: 80%;
+    }
+    .chipPic img{
+        width: 100%;
+    }
+    /********  作品列表 ******/
+    #index_work{
+        margin-bottom: 50px;
+    }
+    .work img{
+        width: 100%;
+    }
+}
+/*****************************************手机端*********************************************/
+@media screen and (max-width: 767px) {
+    /*********************首页大图***********************/
+    #index_img {
+        width: 100%;
+    }
+    #topicImg_box{
+        width: 90%;
+        height: 200px;
+        /*height: 50%;*/
+    }
+    #sloganImg_box{
+        width: 40%;
+    }
+    #sloganImg_box img{
+        width: 100%;
+    }
+    #logo{
+        margin-left: 20px;
+    }
+    /*********************首页内容索引***********************/
+    #index_content{
+        display: block;
+        background-color: #f7f7f7;
+        padding: 30px 10%;
+    }
+    #index_content h2{
+        border-left: solid 2px #000000;
+        padding-left: 16px;
+        margin-bottom: 20px;
+        line-height: 12px;
+        float: left;
+    }
+    #index_content .seeAll{
+        float: right;
+        margin-bottom: 20px;
+        line-height: 12px;
+        font-size: 12px;
+    }
+    #index_content li{
+        margin-bottom: 20px;
+    }
+    /********  文章列表 ******/
+    #index_article{
+        margin-bottom: 50px;
+    }
+    .cover{
+        width: 100%;
+        height: 140px;
+        background-position: 10% 15%;
+    }
+    .cover:hover{
+        opacity: 0.6;
+    }
+    .list_article_content{
+        background-color: #ffffff;
+        padding: 10px 20px;
+    }
+    .cover01{
+        background: url("../images/article/cover01.jpeg");background-size:cover;background-position: 10% 22%;
+    }
+    /********  碎片列表 ******/
+
+    #index_chip h1{
+        float: left;
+        line-height: 30px;
+    }
+    #index_chip h5{
+        float: left;
+        margin-left: 6px;
+        line-height: 40px;
+        margin-left: 3px;
+    }
+    #index_chip .chipPic{
+        float: right;
+        width: 70%;
+    }
+    .chipPic img{
+        width: 100%;
+    }
+    /********  作品列表 ******/
+    #index_work{
+        margin-bottom: 50px;
+    }
+    .work img{
+        width: 100%;
+    }
+    /*********************文章页***********************/
+    #article_box{
+        width: 100%;
+    }
+    #article_box ul{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .cover{
+        width: 100%;
+        height: 140px;
+        background-position: 10% 15%;
+    }
+    /*********************文章页***********************/
+    #chip_box{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #chip_box h1{
+        float: left;
+        line-height: 30px;
+    }
+    #chip_box h5{
+        float: left;
+        margin-left: 3px;
+        line-height: 40px;
+    }
+    #chip_box .chipPic{
+        float: right;
+        width: 70%;
+    }
+    /*********************文章详情页***********************/
+    #articleContent_box{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding-bottom: 60px;
+    }
+    .code{
+        display: none;
+    }
+    #articleContent_box section{
+        margin: 40px 10px;
+    }
+    /*********************图片页***********************/
+    #picture_box ul{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*********************关于我***********************/
+    #aboutme_box{
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        padding: 30px 0;
+    }
+    .code02{
+        width: 300px;
+        margin-top: 5px;
+    }
+}
