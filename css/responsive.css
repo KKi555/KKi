@@ -11,14 +11,14 @@
     }
 }
 /*****************************************桌面*********************************************/
-@media screen and (min-width: 960px) and (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
     /*首页内容索引*/
     #index_content{
         display: none;
     }
 }
 /*****************************************平板*********************************************/
-@media screen and (min-width: 768px) and (max-width: 959px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     /*********************全局**************************/
     body{
         line-height: 26px;
@@ -176,6 +176,10 @@
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+    }
+    /*********************图片故事***********************/
+    #picstory_content{
+        width: 100%;
     }
     /*********************关于我***********************/
     #aboutme_box{
@@ -366,6 +370,10 @@
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+    }
+    /*********************图片故事***********************/
+    #picstory_content{
+        width: 100%;
     }
     /*********************关于我***********************/
     #aboutme_box{
