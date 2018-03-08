@@ -308,7 +308,7 @@ input {border:none;}
     transform: translate(-50%,-50%);
 }
 #picstory_content .picDescription{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
